@@ -21,8 +21,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    <!-- src="assets/cloche1.glb" -->
-                    gltf-model-next="src: url(assets/cloche1.gltf);"
+                    src="assets/cloche1.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -40,7 +39,8 @@
                     id="bowser-model"
                     scale="0.7525628726404326 0.7525628726404326 0.7525628726404326"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    <!--gltf-model="#animated-asset"-->
+                    gltf-model-next="assets/cloche1.gltf"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
